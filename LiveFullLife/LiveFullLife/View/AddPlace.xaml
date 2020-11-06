@@ -1,0 +1,82 @@
+﻿<Window x:Class="LiveFullLife.AddPlace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiveFullLife"
+        mc:Ignorable="d"
+        Title="AddPlace" Height="510" Width="400" WindowStyle="None" BorderThickness="2" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#7AB4B4" >
+        <StackPanel Grid.Row="1"  Margin="0,2.4,0,-1">
+            <Label FontFamily="helvetica"
+                     Content="Название"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Background="Transparent"
+                     Margin="0,20,0,10"
+                     BorderThickness="0"/>
+            <TextBox x:Name="Input_NamePlace" FontFamily="helvetica"
+                     FontSize="14"
+                     HorizontalAlignment="Center"
+                     Background="Transparent"
+                     Margin="0,-20,0,0"
+                     Width="170" 
+                     />
+            <Label FontFamily="helvetica"
+                     Content="Адрес"
+                     FontSize="18"
+                     HorizontalAlignment="Left"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     Margin="165,10,0,10"/>
+
+            <TextBox x:Name="Input_AdressPlace" FontFamily="helvetica"
+                     FontSize="14"
+                     HorizontalAlignment="Center"
+                     Background="Transparent"
+                     Margin="0,-20,0,0"
+                     Width="170" 
+                     />
+            <Label FontFamily="helvetica"
+                     Content="Тип"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Background="Transparent"
+                     Margin="0,20,0,10"
+                     BorderThickness="0"/>
+            <ComboBox x:Name="Input_TypePlace"
+                      FontFamily="helvetica"
+                      FontSize="14"
+                      BorderThickness="1"
+                      Width="200">
+                <TextBlock >бар</TextBlock>
+                <TextBlock >кафе</TextBlock>
+                <TextBlock >ресторан</TextBlock>
+                <TextBlock >кофейня</TextBlock>
+                <TextBlock >парк</TextBlock>
+                <TextBlock >для компаний</TextBlock>
+                <TextBlock >семейный отдых</TextBlock>
+                <TextBlock >культурный отдых</TextBlock>
+            </ComboBox>
+            <Label FontFamily="helvetica"
+                     Content="Описание"
+                     FontSize="18"
+                     HorizontalAlignment="Center"
+                     Background="Transparent"
+                     Margin="0,20,0,10"
+                     BorderThickness="0"/>
+            <TextBox x:Name="Input_DescriptionPlace" FontFamily="helvetica"
+                     FontSize="14"
+                     HorizontalAlignment="Center"
+                     Background="Transparent"
+                     Margin="0,-20,0,0"
+                     Width="370" 
+                     Height="160"
+                     AcceptsReturn="True"
+                     />
+            <Button x:Name="LoadImage_Button" Height="30" Margin="0,10,0,0" Content="Загрузить фото" FontSize="15" Width="200" Click="LoadImage_Button_Click" />
+            <Button x:Name="Add_Button" Height="30" Margin="0,10,0,0" Content="Добавить место" FontSize="15" Width="290" Click="Add_Button_Click" />
+
+        </StackPanel>
+    </Grid>
+</Window>

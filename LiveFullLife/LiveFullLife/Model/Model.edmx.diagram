@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="96c1ed311ca5424e8bb934e8e93dc4ce" Name="Diagram1" ZoomLevel="63">
+        <EntityTypeShape EntityType="LiveForLifeModel.Place_information" Width="1.5" PointX="6.375" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.Place" Width="1.5" PointX="6.25" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.sysdiagram" Width="1.5" PointX="13.5" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.User" Width="1.5" PointX="0.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.Users_adress" Width="1.5" PointX="0.625" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.Users_information" Width="1.5" PointX="0.625" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.Visited_places" Width="1.5" PointX="2.5" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LiveForLifeModel.Wanted_places" Width="1.5" PointX="4" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Place_inf__Id_pl__489AC854" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Visited_p__Visit__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Wanted_pl__Place__3E1D39E1" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Users_inf__Id_us__2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Visited_p__V_Use__42E1EEFE" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Wanted_pl__User___3F115E1A" ManuallyRouted="false" />
+        <AssociationConnector Association="LiveForLifeModel.FK__Users_adr__Id_ad__31B762FC" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

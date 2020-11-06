@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище LiveForLifeModelContainer" CdmEntityContainer="DbContext">
+    <EntitySetMapping Name="Place_information">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Place_information">
+        <MappingFragment StoreEntitySet="Place_information">
+          <ScalarProperty Name="Id_place" ColumnName="Id_place" />
+          <ScalarProperty Name="Photo_place" ColumnName="Photo_place" />
+          <ScalarProperty Name="Place_discriptin" ColumnName="Place_discriptin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Place_types">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Place_types">
+        <MappingFragment StoreEntitySet="Place_types">
+          <ScalarProperty Name="Id_place_type" ColumnName="Id_place_type" />
+          <ScalarProperty Name="Name_of_type" ColumnName="Name_of_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Places">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Place">
+        <MappingFragment StoreEntitySet="Places">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Place_name" ColumnName="Place_name" />
+          <ScalarProperty Name="Place_adress" ColumnName="Place_adress" />
+          <ScalarProperty Name="Place_id_type" ColumnName="Place_id_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="LiveForLifeModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_adress">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Users_adress">
+        <MappingFragment StoreEntitySet="Users_adress">
+          <ScalarProperty Name="Id_adress" ColumnName="Id_adress" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="House" ColumnName="House" />
+          <ScalarProperty Name="Flat" ColumnName="Flat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_information">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Users_information">
+        <MappingFragment StoreEntitySet="Users_information">
+          <ScalarProperty Name="Id_user" ColumnName="Id_user" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Id_userAdress" ColumnName="Id_userAdress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

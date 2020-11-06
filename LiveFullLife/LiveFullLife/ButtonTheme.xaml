@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="FontFamily" Value="helvetica"></Setter>
+        <Setter Property="FontWeight" Value="Black"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+
+
+        <Setter Property="Background" Value="Transparent"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" 
+                            BorderThickness="1" BorderBrush="#FF136365">
+
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+
+        <Style.Triggers>
+            <Trigger  Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#FF136365"/>
+                <Setter Property="Foreground" Value="White"/>
+
+            </Trigger>
+        </Style.Triggers>
+        
+    </Style>
+
+</ResourceDictionary>

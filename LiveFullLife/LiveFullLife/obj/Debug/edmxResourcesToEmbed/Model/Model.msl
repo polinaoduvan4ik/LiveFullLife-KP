@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище LiveForLifeModelContainer" CdmEntityContainer="MyDbContext">
+    <EntitySetMapping Name="Place_information">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Place_information">
+        <MappingFragment StoreEntitySet="Place_information">
+          <ScalarProperty Name="Id_place" ColumnName="Id_place" />
+          <ScalarProperty Name="Place_discriptin" ColumnName="Place_discriptin" />
+          <ScalarProperty Name="Photo_place" ColumnName="Photo_place" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Places">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Place">
+        <MappingFragment StoreEntitySet="Places">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Place_name" ColumnName="Place_name" />
+          <ScalarProperty Name="Place_adress" ColumnName="Place_adress" />
+          <ScalarProperty Name="Place_type" ColumnName="Place_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LiveForLifeModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="LiveForLifeModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_adress">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Users_adress">
+        <MappingFragment StoreEntitySet="Users_adress">
+          <ScalarProperty Name="Id_adress" ColumnName="Id_adress" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="House" ColumnName="House" />
+          <ScalarProperty Name="Flat" ColumnName="Flat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users_information">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Users_information">
+        <MappingFragment StoreEntitySet="Users_information">
+          <ScalarProperty Name="Id_user" ColumnName="Id_user" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Visited_places">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Visited_places">
+        <MappingFragment StoreEntitySet="Visited_places">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Visited_place_id" ColumnName="Visited_place_id" />
+          <ScalarProperty Name="V_User_id" ColumnName="V_User_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wanted_places">
+      <EntityTypeMapping TypeName="LiveForLifeModel.Wanted_places">
+        <MappingFragment StoreEntitySet="Wanted_places">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Place_id" ColumnName="Place_id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
